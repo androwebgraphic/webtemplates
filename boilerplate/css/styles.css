@@ -8,10 +8,12 @@ html{
 body{
 	
 	color: white;
+	
 }
 #Wrap{
 	
 	background-color: rgb(4, 50, 46);
+	min-height: 100vh;
 }
 ul{
 	
