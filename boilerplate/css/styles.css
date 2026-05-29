@@ -11,8 +11,9 @@ body{
 	
 }
 #Wrap{
-	
-	background-color: rgb(4, 50, 46);
+	margin: 0 auto;
+	width:90%;
+	background-color: rgb(0, 34, 47);
 	min-height: 100vh;
 }
 ul{
@@ -23,7 +24,7 @@ h1{
 	font-size: 4rem;
 	padding: 1rem;
 	text-align: center;
-	margin-top: 5rem;
+	/* margin-top: 5rem; */
 	
 }
 p{
