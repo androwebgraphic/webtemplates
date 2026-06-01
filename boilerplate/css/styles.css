@@ -7,13 +7,15 @@ html{
 }
 body{
 	
-	color: white;
+margin: 0;
+padding: 0;
 	
 }
 #Wrap{
 	dispalay:flex;
 	flex-direction: column;
 	margin: 0 auto;
+	padding: 0;
 	width:90%;
 	background-color: rgb(0, 34, 47);
 	min-height: 100vh;
@@ -22,32 +24,25 @@ ul{
 	
 	list-style: none;
 	text-decoration: none;
+	/* display: none; */
+}	
+#Main-nav {
 	
-h1{
-	display: none;
-	}
-	/* margin-top: 5rem; */
+	margin-top: 2rem;
+}ul{
 	
-}
-p{
-	font-size: 1.5rem;
-	padding: 1rem;
-}
-nav#Main ul{
+	/* margin: 2rem 0 0 0; */
 	display: flex;
-	flex-direction:row;
-	justify-content: space-between;
-
-}
-a{
-	padding:1.5rem;
-	margin-right: 2rem;
-	font-size:2rem;
-	color: white;
-	text-decoration: none;
+	flex-direction: row;
+	justify-content: flex-start;
 	
-)
-a:hover{
-	
-	color: yellow;
+	ul li{
+		
+		flex-grow: 1;
+	}
+	a{
+		font-size: 2rem;
+		color: white;
+		text-decoration: none;
+	}
 }
