@@ -1,3 +1,4 @@
+/* ********* CSS RESET START ***** */
 html{
 	
 	box-sizing: border-box;
@@ -10,39 +11,63 @@ body{
 margin: 0;
 padding: 0;
 	
-}
-#Wrap{
-	dispalay:flex;
-	flex-direction: column;
-	margin: 0 auto;
+}ul{
+	margin: 0;
 	padding: 0;
-	width:90%;
-	background-color: rgb(0, 34, 47);
-	min-height: 100vh;
-}
-ul{
-	
 	list-style: none;
 	text-decoration: none;
 	/* display: none; */
-}	
-#Main-nav {
-	
-	margin-top: 2rem;
-}ul{
-	
-	/* margin: 2rem 0 0 0; */
+}
+/* ********* CSS RESET END ***** */
+#Wrap{
+	width:90%;
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
+	flex-direction: column;
+	background-color: rgb(15, 47, 97);
+	margin: 0 auto 0 auto;
+	height: 100vh;
+} 
+header{
 	
-	ul li{
-		
-		flex-grow: 1;
-	}
+	background-color: #6fa4e4;
+	
+}
+#Main-menu{
+	
+	display: flex;
+	padding: 2rem 0 0 2rem;
+	
 	a{
-		font-size: 2rem;
-		color: white;
+		margin-right:1rem;
 		text-decoration: none;
+		/* font-size: 2.5rem; */
+		color: white;
+		background-color:#b19421;
+		
 	}
+}
+	
+/* 1. Hide all sub-menus by default */
+.sub-menu {
+  display: none;
+  /* position: absolute; /* Optional: for layout positioning */ */
+ 
+}
+
+.sub-menu li a{
+	
+	color:orange;
+	font-size: 1rem;
+}
+/* 2. Target the 3rd 'li' ONLY if it HAS a '.sub-menu' inside it, 
+	  then display that sub-menu when hovered */
+	  
+#Main-menu > li:nth-child(3):has(.sub-menu):hover .sub-menu {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0rem;
+}
+main{
+	
+	background-color:#052047;
 }
