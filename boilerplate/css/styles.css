@@ -40,14 +40,17 @@ header{
 	a{
 		margin-right:1rem;
 		text-decoration: none;
-		/* font-size: 2.5rem; */
+		font-size: 2.5rem;
 		color: white;
 		background-color:#b19421;
 		
 	}
 }
+	#Main-nav a:nth-child(1){
+		margin-right:auto;
+	}
 	
-/* 1. Hide all sub-menus by default */
+	/* 1. Hide all sub-menus by default */
 .sub-menu {
   display: none;
   /* position: absolute; /* Optional: for layout positioning */ */
@@ -67,7 +70,22 @@ header{
   flex-direction: column;
   margin-left: 0rem;
 }
-main{
+section#Main-content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	
 	background-color:#052047;
+	
+	h1{
+		
+		color: #ff9800;
+		font-size: 4rem;
+	}
+	p{
+		
+		color: #8290a3;
+		font-size: 1.8rem;
+		line-height:1.5rem;
+	}
 }
