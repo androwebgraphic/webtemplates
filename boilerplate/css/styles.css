@@ -27,6 +27,7 @@ a{
 /* ********* CSS RESET END ***** */
 #Wrap{
 	width:90%;
+	min-width: 320px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -98,7 +99,7 @@ section#Main-content{
 	border-radius: 2rem;
 	/* align-items: flex-start; */
 
-	width:95%;
+	width:90%;
 	background-color:#052047;
 	
 	h1{
