@@ -70,7 +70,7 @@ flex-wrap:wrap;
 }
 .sub-menu li{
 	
-	margin:1rem;
+	margin-top:1rem;
 }
 .sub-menu li a{
 	
@@ -130,6 +130,11 @@ section#Main-content{
 	border-radius: 2rem;
 	background-color: rgb(218, 213, 213);
 	height: 250px;
+	&:hover{
+		
+		box-shadow: 4px 4px 0px #f82;
+		margin-top:.5rem;
+	}
 }
 
 footer{
@@ -154,6 +159,25 @@ footer{
 		color: #ff9800;
 		a:visited{
 			color: #fff491;
+		}
+		
+		
+	}
+	a.top{
+		display: inline-block;
+		font-size:1.6rem;
+		
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		position: absolute;
+		right: 1.5rem;
+		bottom: 2rem;
+		
+		}
+		a.top:hover{
+			
+			  box-shadow: 4px 4px 0px #000, 8px 8px 0px #ff007f;
 		}
 	}
 }
