@@ -20,11 +20,16 @@ padding: 0;
 	text-decoration: none;
 	/* display: none; */
 }
+a{
+	
+	text-decoration: none;
+}
 /* ********* CSS RESET END ***** */
 #Wrap{
 	width:90%;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	background-color: rgb(15, 47, 97);
 	margin: 0 auto 0 auto;
     align-items: center;
@@ -33,7 +38,9 @@ padding: 0;
 } 
 header{
 	
-	background-color: #6fa4e4;
+display: flex;
+flex-direction: row;
+flex-wrap:wrap;
 	
 }
 #Main-menu{
@@ -122,18 +129,30 @@ section#Main-content{
 	border-radius: 2rem;
 	background-color: rgb(218, 213, 213);
 	height: 250px;
-	
+}
 
 footer{
 	
 	width: 100%;
-	height: 2rem;
+	height:4rem;
 	background-color:#552703 ;
-	flex-grow: 1;
+	position: absolute;
+	bottom: 0;
+	/* flex-grow: 1; */
+}
 	p{
 		
-		font-size: .5rem;
+		font-size: 1.3rem;
 		color: white;
+		text-align: center;
 
+	}
+	
+	span{
+		
+		color: #ff9800;
+		a:visited{
+			color: #fff491;
+		}
 	}
 }
